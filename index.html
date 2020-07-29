@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: "微軟正黑體";
+        }
+
+        div[class*=bg-dark]:nth-child(1) {
+            border-bottom: 2px #dc3545 solid;
+        }
+
+        #A {
+            min-width: 1200px;
+        }
+
+
+        #search {
+            box-sizing: border-box;
+        }
+
+        #Pic {
+            position: relative;
+            min-width: 290px;
+        }
+
+        #pay {
+            position: absolute;
+            right: 16px;
+        }
+
+        img[src*=main] {
+            border: #ffc107 3px solid;
+            border-radius: 5px;
+        }
+
+        #BG_ID {
+            width: 100%;
+            background: url(image/BG_Pic.jpg);
+            background-position-y: center;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        .mt-2 p {
+            font-size: 12px;
+        }
+
+        div[class*=btn],
+        div[class*=btn]:hover {
+            color: white;
+        }
+
+        div[class*=btn]:nth-child(3):hover {
+            color: rgb(201, 201, 201);
+
+        }
+
+        #icon div {
+            clip-path: circle();
+        }
+
+        div[class*=text-nowrap] div[class*=pr-5]:hover,
+
+        div[class*=text-nowrap] div[class*=px-3]:hover {
+            color: firebrick;
+            cursor: pointer;
+        }
+
+        p>span:hover {
+            color: rgb(201, 201, 201);
+            cursor: pointer;
+
+        }
+
+        #form_ID {
+            position: relative;
+        }
+
+        form p {
+            position: absolute;
+            right: 40px;
+            top: 0px;
+            color: rgb(0, 0, 0);
+        }
+
+        form p:hover {
+            color: firebrick;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        #mylist_A:hover {
+            color: firebrick;
+        }
+
+        img[class*=rounded-circle] {
+            width: 40px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div id="A">
+        <div class="bg-dark text-white">
+            <div class="container text-nowrap flex-row">
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center ">
+                        <div class="pr-5 ">主站</div>
+                        <div class="pr-5">直播間</div>
+                        <div class="pr-5">活動</div>
+                        <div class="pr-5">手機客戶端</div>
+                    </div>
+
+
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                        <div class="" id="form_ID">
+                            <form class="text-center">
+                                <label for="search"></label>
+                                <input type="text" placeholder="搜索" id="search" name=""
+                                    class="rounded-pill w-75 form-control d-inline-flex " style="height:30px;">
+                                <p>➹</p>
+                            </form>
+                        </div>
+                        <div class="px-3">登錄/註冊</div>
+                        <div class=" btn btn-danger rounded-0 px-3 py-2">投稿</div>
+                    </div>
+                </div>
+                <!-- row1結束 -->
+
+
+
+
+            </div>
+        </div>
+
+        <div id="BG_ID" class="d-flex" style="height: 380px;">
+            <div class="container ">
+                <div class="d-flex py-5 flex-row text-nowrap">
+                    <div class="col-3 pl-0" id="Pic">
+                        <img src="image/main_Pic.jpg" alt="" class="img-fluid ">
+                        <div class="bg-warning d-inline-flex p-1 text-white  rounded" id="pay"> 付費收聽 </div>
+                    </div>
+                    <div class="col-6 text-white justify-content-between d-flex flex-column">
+                        <div class=" align-items-start d-inline-flex flex-direction:row ">
+                            <div class="bg-info px-2 rounded my-1"><small>更新中</small></div>
+                            <h4 class=" font-weight-bold ml-2">破雲 第三季</h4>
+                        </div>
+                        <div class="mt-2">
+                            <p>總播放量：40萬</p>
+                            <p>已更新至 小劇場·馴貓記</p>
+                            <p>改編 原作：淮上</p>
+                            <p>類型：純愛</p>
+                            <p>標簽：<span class="border border-white px-3 rounded-pill">淮上</span></p>
+                        </div>
+
+                        <div class="d-flex text-white" id="btn_A">
+                            <div class="btn btn-warning  py-2 px-3 rounded mr-3">💎支付 359 钻解封本剧</div>
+                            <div class="btn btn-danger py-2 px-3 rounded mr-3">❤追劇</div>
+                            <div class="btn btn-outline-white py-2 px-3 border  rounded">▷播放全部</div>
+                        </div>
+
+                    </div>
+                    <div class="col-3 text-white ">
+                        <div class="h-50 d-flex justify-content-end">
+                            <p>舉報/糾錯</p>
+                        </div>
+
+                        <div class=" h-50 d-flex justify-content-end  align-items-end" id="icon">
+                            <div class="ml-2 btn btn-warning">
+                                <h6>★</h6>
+                            </div>
+                            <div class="ml-2 btn btn-primary">
+                                <h6>✪</h6>
+                            </div>
+                            <div class="ml-2 btn btn-danger">
+                                <h6>◐</h6>
+                            </div>
+                            <div class="ml-2 btn btn-success ">
+                                <h6>⧔</h6>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- 正劇 -->
+            <h5 class="font-weight-bolder my-4">正劇</h5>
+            <div class="d-inline-flex list-group list-group-horizontal">
+                <div class="btn list-group-item px-5 py-3  mr-3 text-dark mylist_A">預告</div>
+
+
+                <div class="d-inline-flex list-group list-group-horizontal">
+                    <div class="btn list-group-item px-5 py-3  text-dark mylist_A" style="position: relative;">小劇場
+                        <div class="bg-danger rounded-pill d-inline text-white px-1 align-items-center d-inline-flex"
+                            style="position: absolute; top: -5px;right: -15px;"><small>NEW</small></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 真愛榜 -->
+            <div class="list-group rounded my-4 ">
+                <div class="font-weight-bolder pt-3 px-4 list-group-item">真愛榜</div>
+
+
+                <div class="list-group-item">
+                    <ul class="nav">
+                        <li class="nav-link"><a href="">七日榜</a></li>
+                        <li class="nav-link"><a href="">月榜</a></li>
+                        <li class="nav-link"><a href="">總榜</a></li>
+                    </ul>
+
+
+                    <div class="p-3">
+                        <table class="">
+                            <tr class="d-flex text-nowrap">
+                                <td class="align-items-center d-flex mr-5">
+                                    <h5 class="text-warning d-inline-flex">1.</h5><img class=" rounded-circle mx-2"
+                                        src="image/main_Pic.jpg" alt="">
+                                    <div class="d-inline-flex flex-column ">
+                                        <span>酃小非爱岩浆 <span class="text-danger">❤1w</span></span>
+                                        <small class="text-secondary">小剧场太可爱了！！！</small>
+
+                                    </div>
+                                </td>
+                                <td class="align-items-center d-flex mr-5">
+                                    <h5 class="text-info d-inline-flex">2.</h5><img class=" rounded-circle mx-2"
+                                        src="image/main_Pic.jpg" alt="">
+                                    <div class="d-inline-flex flex-column ">
+                                        <span>君笙南影<span class="text-danger">❤9999</span></span>
+                                        <small class="text-secondary">谢谢空带我走进配音的世界 愿我们初心不忘
+                                        </small>
+
+                                    </div>
+                                </td>
+                                <td class="align-items-center d-flex mr-5">
+                                    <h5 class="text-warning d-inline-flex">3.</h5><img class=" rounded-circle mx-2"
+                                        src="image/main_Pic.jpg" alt="">
+                                    <div class="d-inline-flex flex-column ">
+                                        <span>一字白首 <span class="text-danger">❤5200 </span></span>
+                                        <small class="text-secondary">谢谢作者大大设了严峫这样一个人来做救赎</small>
+
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            <tr class="d-flex text-nowrap mt-3">
+                                <td class="align-items-center d-flex mr-5">
+                                    <h5 class="text-secondary d-inline-flex">1.</h5><img class=" rounded-circle mx-2"
+                                        src="image/main_Pic.jpg" alt="">
+                                    <div class="d-inline-flex flex-column ">
+                                        <span>酃小非爱岩浆 <span class="text-danger">❤1w</span></span>
+                                        <small class="text-secondary">小剧场太可爱了！！！</small>
+
+                                    </div>
+                                </td>
+                                <td class="align-items-center d-flex mr-5">
+                                    <h5 class="text-secondary d-inline-flex">2.</h5><img class=" rounded-circle mx-2"
+                                        src="image/main_Pic.jpg" alt="">
+                                    <div class="d-inline-flex flex-column ">
+                                        <span>君笙南影<span class="text-danger">❤9999</span></span>
+                                        <small class="text-secondary">谢谢空带我走进配音的世界 愿我们初心不忘
+                                        </small>
+
+                                    </div>
+                                </td>
+                                <td class="align-items-center d-flex mr-5">
+                                    <h5 class="text-secondary d-inline-flex">3.</h5><img class=" rounded-circle mx-2"
+                                        src="image/main_Pic.jpg" alt="">
+                                    <div class="d-inline-flex flex-column ">
+                                        <span>一字白首 <span class="text-danger">❤5200 </span></span>
+                                        <small class="text-secondary">谢谢作者大大设了严峫这样一个人来做救赎</small>
+
+                                    </div>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+align-items-center
+
+</html>
